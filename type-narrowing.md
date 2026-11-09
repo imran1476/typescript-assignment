@@ -38,6 +38,6 @@ function speak(pet: Cat | Dog): void {
 ```
 
 Inside each branch, the compiler knows the exact type, so autocomplete and error checking work correctly.
-
+Type narrowing is especially useful when handling API responses, form inputs, and user-generated data. For example, an application may receive different response types depending on the request. By checking the value before using it, developers can prevent runtime errors and write more reliable code. These checks also make complex applications easier to understand and maintain.
 ## Conclusion
 Type narrowing makes union types safe and practical to use. Prefer it over type assertions so the compiler keeps protecting your code.

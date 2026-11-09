@@ -37,6 +37,7 @@ const account = new Account("Rakib", 500, 1);
 ```
 
 Here, `SavingsAccount` can read `bankName`, but code outside the class cannot. Note that these checks happen at compile time only.
+These modifiers are useful when designing real-world applications with multiple classes. For example, a banking application can keep account balances private while providing a public method to retrieve the balance safely. A protected property can be shared with specialized subclasses without exposing it to unrelated code. Choosing the correct modifier improves security at the code design level and makes maintenance easier.
 
 ## Conclusion
 Access modifiers enforce encapsulation and make classes safer and easier to maintain. Use `private` by default and open access only when needed.

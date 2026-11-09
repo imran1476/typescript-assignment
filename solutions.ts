@@ -65,7 +65,7 @@ class Manager extends Employee {
   }
 }
 
-function validateAgeAsync(age: number): Promise<string> {
+async function validateAgeAsync(age: number): Promise<string> {
   return new Promise<string>((resolve: (value: string) => void, reject: (reason: Error) => void): void => {
     if (age < 18) {
       reject(new Error("Access Denied: Must be 18 or older"));
